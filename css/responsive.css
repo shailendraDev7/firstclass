@@ -1,0 +1,105 @@
+@media(max-width:480px) {
+    #home {
+        height: 350px;
+    }
+    .container {
+        width: 100%;
+    }
+    body {
+        text-align: center;
+    }
+    header nav {
+        background: rgba(0, 0, 0, 0.7);
+        height: 100vh;
+        width: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 100;
+        padding-top: 50px;
+        line-height: 70px;
+        font-size: 30px;
+    }
+    header nav ul li {
+        float: none;
+    }
+    header nav ul li:first-child{
+        display: block;
+    }
+    .head-content{
+        padding-top: 0px;
+        position: relative;
+    }
+    .head-content h1 {
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+    .head-content p {
+        font-size: 12px;
+    }
+    .head-content a i {
+        animation-name: arrow1;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        position: absolute;
+    }
+    @keyframes arrow1 {
+        0% {
+            top: 80px;
+        }
+        50% {
+            top: 100px;
+        }
+        100% {
+            top: 80px;
+        }
+    }
+    .form .left {
+        float: none;
+    }
+    .form .right {
+        float: none;
+        margin-top: 10px;
+    }
+    #product .men:after {
+        content: '';
+        display: none;
+    }
+    #product .product {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+        column-gap: 20px;
+    }
+    #product .women {
+        text-align: center;
+    }
+    #product .women:after {
+        content: '';
+        display: none;
+    }
+    #about-us .about-us {
+        width: 400px;
+    }
+    #about-us .about-us:after {
+        left: 160px;
+    }
+    footer .left {
+        float: none;
+    }
+    footer .right {
+        float: none;
+    }
+    .threeline {
+        display: block;
+        float: right;
+        cursor: pointer;
+    }
+    .threeline .one {
+        width: 35px;
+        height: 5px;
+        background: white;
+        margin: 5px;
+        border-radius: 5px;
+    }
+}
